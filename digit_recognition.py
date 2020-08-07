@@ -17,7 +17,7 @@ print(x_test.shape[0], 'test samples')
 # 參數
 batch_size = 32
 num_classes = 10
-epochs = 5
+epochs = 1
 
 # 建立 model
 model = keras.Sequential()
@@ -34,11 +34,12 @@ model.add(keras.layers.Dense(num_classes, activation='softmax'))
 
 # 畫出 model ，圖放在後面
 keras.utils.plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
+
 # 訓練
-model.compile(optimizer='adam',
-loss='sparse_categorical_crossentropy',
-metrics=['accuracy'])
+model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs)
+
 # 驗證
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print('Test accuracy:', test_acc)
+
