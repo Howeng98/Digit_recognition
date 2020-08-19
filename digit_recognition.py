@@ -13,21 +13,20 @@ x_test.reshape(-1, x_test.shape[1], x_test.shape[2], 1)
 print('x_train shape:', x_train.shape)
 print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
-
+    
 # 參數
-batch_size = 32
+batch_size = 20
 num_classes = 10
 epochs = 1
 
 # 建立 model
 model = keras.Sequential()
-model.add(keras.layers.Conv2D(32, kernel_size=(5, 5),
-activation='relu',
-input_shape=(28, 28, 1)))
+model.add(keras.layers.Conv2D(32, kernel_size=(3,3),activation='relu',input_shape=(28, 28, 1)))
 model.add(keras.layers.Conv2D(64, (5, 5), activation='relu'))
 model.add(keras.layers.MaxPooling2D(pool_size=(2, 2)))
 model.add(keras.layers.Dropout(0.25))
 model.add(keras.layers.Flatten())
+model.add(keras.layers.Dropout(0.5))
 model.add(keras.layers.Dense(128, activation='relu'))
 model.add(keras.layers.Dropout(0.5))
 model.add(keras.layers.Dense(num_classes, activation='softmax'))
