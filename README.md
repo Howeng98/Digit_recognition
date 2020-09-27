@@ -1,6 +1,6 @@
 # Handwriting Digit Recognition with Convolutional Neural Network
 Objective of this work is to identify and classify the Handwriting Digit Images from group 0 to 9 with ```Convolutional Neural Network``` 
-And the model predict accuracy is **0.9918**. In addiction, ```google colaboratory GPU``` is recommended for the model training if you can't afford a better Graphic Card
+And the model predict accuracy is **0.9943**. In addiction, ```google colaboratory GPU``` is recommended for the model training if you can't afford a better Graphic Card
 
 
 
