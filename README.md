@@ -18,12 +18,12 @@ And the model predict accuracy is ```0.9918```.
 
 
 ## Requirement
-  - python 3.8.2 or above
-  - GPU (recommended)
-  - Tensorflow
-  - Keras
-  - Matplotlib
-  - MNIST dataset
+  - **Python 3.8.2 or above**
+  - **GPU (recommended)**
+  - **Tensorflow**
+  - **Keras**
+  - **Matplotlib**
+  - **MNIST dataset**
   
 ## Build
 ```
