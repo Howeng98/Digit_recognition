@@ -37,8 +37,8 @@ It show the handwriting image which provided by the MNIST and the model predict 
 ![](img/output2.png)
 ![](img/output3.png)
 
-## Prework and setup
-As above mentioned, if you are using google colaboratory GPU then you must install following module and packages for compile and build
+## Prework and Setup
+As above mentioned, if you are using google colaboratory GPU then you must install following module and packages for compile and build.
 
   - **python-mnist**
   - **keras**
@@ -47,3 +47,26 @@ As above mentioned, if you are using google colaboratory GPU then you must insta
 !pip install python-mnist
 !pip install keras
 ```
+
+## Google GPU device list and information
+For the GPU, you can use following code to check the how many GPU devices is listed and how many ram you are using.
+Adjust is available for it
+```
+import tensorflow as tf
+from tensorflow.python.client import device_lib
+
+tf.test.gpu_device_name()
+device_lib.list_local_devices()
+!cat /proc/meminfo
+```
+
+![](img/gpu_information.png)
+
+## Training Epoch with Model Loss and Accuracy Variation
+From the output we can observe that model's **loss** is getting decrease and **accuracy** become greater and approach 0.998
+
+![](img/training_epoch.png)
+
+![](img/model_loss.png)
+
+![](img/model_accuracy.png)
