@@ -31,14 +31,14 @@ And the model predict accuracy is **0.9918**. In addiction, ```google colaborato
 python3 digit_recognition.py
 ```
 ## Output 
-It show the handwriting image which provided by the MNIST and the model predict result 
+It show the **Handwriting Image** which provided by the ```MNIST``` and the model predict result 
 
 ![](img/output1.png)
 ![](img/output2.png)
 ![](img/output3.png)
 
 ## Prework and Setup
-As above mentioned, if you are using google colaboratory GPU then you must install following module and packages for compile and build.
+As above mentioned, if you are using ```google colaboratory GPU``` then you must install following module and packages for compile and build.
 
   - **python-mnist**
   - **keras**
@@ -49,7 +49,7 @@ As above mentioned, if you are using google colaboratory GPU then you must insta
 ```
 
 ## Google GPU device list and information
-For the GPU, you can use following code to check the how many GPU devices is listed and how many ram you are using.
+For the GPU, you can use following code to check the how many **GPU devices** is listed and how many **RAM** you are using.
 Adjust is available for it
 ```
 import tensorflow as tf
@@ -63,7 +63,7 @@ device_lib.list_local_devices()
 ![](img/gpu_information.png)
 
 ## Training Epoch with Model Loss and Accuracy Variation
-From the output we can observe that model's **loss** is getting decrease and **accuracy** become greater and approach 0.998
+From the output we can observe that model **Loss** is getting decrease and **Accuracy** become greater and approach **0.994**
 
 ![](img/training_epoch.png)
 
