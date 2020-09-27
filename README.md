@@ -70,3 +70,7 @@ From the output we can observe that model's **loss** is getting decrease and **a
 ![](img/model_loss.png)
 
 ![](img/model_accuracy.png)
+
+## Reference
+* https://nextjournal.com/gkoehler/digit-recognition-with-keras
+* https://www.sitepoint.com/keras-digit-recognition-tutorial
