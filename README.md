@@ -8,11 +8,14 @@ python3 digit_recognition.py
 ```
 
 ## Structure
-1. Neural Network Structure
+1. **Neural Network Structure**
+
 ![](img/neural_network.png)
 
-2. Model Structure Sample
+2. **Model Structure Sample**
+
 ![](img/cnn_structure.jpeg)
 
-3. Model Structure and Layes
-![](img/model.png)
+3. **Model Structure and Layes**
+
+![.](img/model.png)
