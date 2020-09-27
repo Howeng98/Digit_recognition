@@ -10,6 +10,7 @@ x_train, x_test = x_train.reshape(-1, x_train.shape[1], x_train.shape[2], 1), \
 x_test.reshape(-1, x_test.shape[1], x_test.shape[2], 1)
 
 # Debug 用的資訊
+print(type(x_train))
 print('x_train shape:', x_train.shape)
 print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
